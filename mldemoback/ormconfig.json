@@ -1,0 +1,17 @@
+{
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "leaderboard-backend",
+    "password": "password",
+    "database": "fwldemo-db",
+    "entities": [ "dist/leaderboard/*.entity{.js, .ts}" ],
+    "migrationsRun": true,
+    "synchronize": false,
+    "dropSchema": false,
+    "logging": false,
+    "migrations": ["src/migrations/*{.js}"],
+    "cli":{
+        "migrationsDir": "src/migrations"
+    }
+}
